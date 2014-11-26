@@ -12,3 +12,7 @@ license = "MIT"
 
 leveldb = "0.2.0"
 db_key = "0.0.1"
+
+[lib]
+
+name = "drossel_journal"
