@@ -6,6 +6,8 @@ authors = ["Florian Gilcher <florian.gilcher@asquera.de>"]
 
 description = "The journal used by drossel to write to disk"
 
+license = "MIT"
+
 [dependencies]
 
 leveldb = "0.2.0"
