@@ -1,7 +1,7 @@
 [package]
 
 name = "drossel-journal"
-version = "0.0.1"
+version = "0.1.0"
 authors = ["Florian Gilcher <florian.gilcher@asquera.de>"]
 
 description = "The journal used by drossel to write to disk"
