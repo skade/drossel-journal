@@ -1,0 +1,12 @@
+[package]
+
+name = "drossel-journal"
+version = "0.0.1"
+authors = ["Florian Gilcher <florian.gilcher@asquera.de>"]
+
+description = "The journal used by drossel to write to disk"
+
+[dependencies]
+
+leveldb = "0.2.0"
+db_key = "0.0.1"
