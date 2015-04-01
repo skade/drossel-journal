@@ -11,7 +11,7 @@ license = "MIT"
 [dependencies]
 
 db-key = "*"
-leveldb = "0.6.0"
+leveldb = "0.6.1"
 
 [dev-dependencies]
 
