@@ -104,7 +104,7 @@ impl Journal {
   fn new(path: &Path) -> Result<Journal, Error> {
     let mut options = Options::new();
     options.create_if_missing = true;
-    let db = Database::open_with_comparator(path, options, OrdComparator::new());
+    let db = Database::open_with_comparator(path, options, OrdComparator::new("journal-comparator".into()));
     let head = Key { keytype: KeyType::Queue, id: 0 };
     let tail = Key { keytype: KeyType::Queue, id: 0 };
     let reserved_tail = Key { keytype: KeyType::Queue, id: 0 };
@@ -117,7 +117,7 @@ impl Journal {
   fn open_existing(path: &Path) -> Result<Journal,Error> {
     let mut options = Options::new();
     options.create_if_missing = false;
-    let db = Database::open_with_comparator(path, options, OrdComparator::new());
+    let db = Database::open_with_comparator(path, options, OrdComparator::new("journal-comparator".into()));
     match db {
       Ok(mut existing) => {
         let (head, tail, reserved_tail) = Journal::read_keys(&mut existing);

@@ -10,8 +10,8 @@ license = "MIT"
 
 [dependencies]
 
-db-key = "*"
-leveldb = "0.6.1"
+db-key = "0.0.5"
+leveldb = "0.8.0"
 
 [dev-dependencies]
 
